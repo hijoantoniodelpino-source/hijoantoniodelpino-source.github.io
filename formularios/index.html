@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tu Nombre Completo">
+    <meta name="description" content="Formularios de prácticas - Tu Nombre Completo">
+    <meta name="keywords" content="formularios, datos personales, club informática">
+    <title>Formularios - Tu Nombre Completo</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formularios de Prácticas</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Volver al menú principal</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- ============================= -->
+        <!-- FORMULARIO 1: DATOS PERSONALES -->
+        <!-- ============================= -->
+        <h2>Formulario 1: Datos Personales</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </p>
+
+                <p>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                </p>
+
+                <p>
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni">
+                </p>
+
+                <p>
+                    <label for="localidad">Localidad de Nacimiento:</label>
+                    <input type="text" id="localidad" name="localidad">
+                </p>
+
+                <p>
+                    <label for="provincia">Provincia:</label>
+                    <select id="provincia" name="provincia">
+                        <option value="huelva">Huelva</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="cadiz">Cádiz</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="malaga">Málaga</option>
+                        <option value="granada">Granada</option>
+                        <option value="jaen">Jaén</option>
+                        <option value="almeria">Almería</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="fecha">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha">
+                </p>
+
+                <p>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </p>
+
+                <p>
+                    <label for="cp">Código Postal:</label>
+                    <input type="text" id="cp" name="cp">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Forma de Acceso</legend>
+                <p>
+                    <input type="radio" id="directo" name="acceso" value="directo">
+                    <label for="directo">Directo</label>
+                </p>
+                <p>
+                    <input type="radio" id="prueba" name="acceso" value="prueba">
+                    <label for="prueba">Prueba Libre</label>
+                </p>
+
+                <p>Si has elegido Directo, indica la modalidad:</p>
+                <p>
+                    <input type="radio" id="bach" name="modalidad" value="bachillerato">
+                    <label for="bach">Bachillerato Log Modalidad</label>
+                    <input type="text" name="bachillerato_texto">
+                </p>
+                <p>
+                    <input type="radio" id="experimental" name="modalidad" value="experimental">
+                    <label for="experimental">Experimental</label>
+                </p>
+                <p>
+                    <input type="radio" id="cou" name="modalidad" value="cou">
+                    <label for="cou">COU Opción</label>
+                    <input type="text" name="cou_texto">
+                </p>
+                <p>
+                    <input type="radio" id="fp2" name="modalidad" value="fp2">
+                    <label for="fp2">FP2</label>
+                </p>
+                <p>
+                    <input type="radio" id="otros" name="modalidad" value="otros">
+                    <label for="otros">Otros (especifique)</label>
+                    <input type="text" name="otros_texto">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Documentos Adjuntados</legend>
+                <p>
+                    <input type="checkbox" id="fotocopia" name="documentos" value="fotocopia">
+                    <label for="fotocopia">Fotocopia DNI</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="certificado" name="documentos" value="certificado">
+                    <label for="certificado">Certificado Académico</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="otros_doc" name="documentos" value="otros_doc">
+                    <label for="otros_doc">Otros documentos (especifique)</label>
+                    <input type="text" name="otros_doc_texto">
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar Solicitud">
+                <input type="reset" value="Limpiar datos">
+            </p>
+        </form>
+
+        <hr>
+
+        <!-- ================================= -->
+        <!-- FORMULARIO 2: CLUB AMIGOS INFO    -->
+        <!-- ================================= -->
+        <h2>Formulario 2: Club "Amigos de la Informática"</h2>
+        <p><em>Rellena el siguiente cuestionario para formar parte del club de "Amigos de la informática"</em></p>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <p>
+                    <label for="nombre2">Nombre:</label>
+                    <input type="text" id="nombre2" name="nombre2">
+                </p>
+
+                <p>
+                    <label for="domicilio">Domicilio:</label>
+                    <input type="text" id="domicilio" name="domicilio" placeholder="calle, número y localidad">
+                </p>
+
+                <p>
+                    <label for="pais">País de origen:</label>
+                    <select id="pais" name="pais">
+                        <option value="espana">España</option>
+                        <option value="francia">Francia</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="italia">Italia</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="fecha2">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha2" name="fecha2">
+                </p>
+
+                <p>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo">
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </p>
+
+                <p>Estado civil:</p>
+                <p>
+                    <input type="radio" id="soltero" name="estado" value="soltero">
+                    <label for="soltero">Soltero</label>
+                    <input type="radio" id="casado" name="estado" value="casado">
+                    <label for="casado">Casado</label>
+                    <input type="radio" id="separado" name="estado" value="separado">
+                    <label for="separado">Separado</label>
+                    <input type="radio" id="viudo" name="estado" value="viudo">
+                    <label for="viudo">Viudo</label>
+                </p>
+
+                <p>Sexo:</p>
+                <p>
+                    <input type="radio" id="hombre" name="sexo" value="hombre">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="mujer" name="sexo" value="mujer">
+                    <label for="mujer">Mujer</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Otra información de interés</legend>
+
+                <p>
+                    <label for="dispositivo">Seleccione los componentes electrónicos con los que habitualmente trabaja:</label>
+                    <select id="dispositivo" name="dispositivo" multiple>
+                        <option value="movil">Móvil</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="ordenador">Ordenador</option>
+                        <option value="ebook">Ebook</option>
+                    </select>
+                </p>
+
+                <p>Seleccione tus actividades favoritas:</p>
+                <p>
+                    <input type="checkbox" id="deporte" name="actividades" value="deporte">
+                    <label for="deporte">Hacer deporte</label>
+                    <input type="checkbox" id="amigos" name="actividades" value="amigos">
+                    <label for="amigos">Salir con mis amigos</label>
+                    <input type="checkbox" id="series" name="actividades" value="series">
+                    <label for="series">Ver series, pelis,...</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="senderismo" name="actividades" value="senderismo">
+                    <label for="senderismo">Realizar rutas de senderismo</label>
+                    <input type="checkbox" id="cine" name="actividades" value="cine">
+                    <label for="cine">Ir al cine</label>
+                    <input type="checkbox" id="musica" name="actividades" value="musica">
+                    <label for="musica">Escuchar música</label>
+                </p>
+
+                <p>
+                    <label for="motivo">Explique brevemente el motivo por el que desea ingresar en nuestro club:</label><br>
+                    <textarea id="motivo" name="motivo" rows="4" cols="60"></textarea>
+                </p>
+
+                <p>
+                    <label for="peli">Elige o escribe tu peli favorita:</label>
+                    <input type="text" id="peli" name="peli">
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Cancelar">
+            </p>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tu Nombre Completo</p>
+    </footer>
+
+</body>
+</html>
