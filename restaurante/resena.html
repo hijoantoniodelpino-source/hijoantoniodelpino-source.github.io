@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Antonio Del Pino Hidalgo">
+    <meta name="description" content="Formulario de reseña - Restaurante El Buen Sabor">
+    <meta name="keywords" content="reseña, plato, restaurante, formulario">
+    <title>Reseña - Restaurante El Buen Sabor</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <h1>Deja tu reseña de un plato</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Volver al menú principal del restaurante</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <form action="#" method="post">
+
+            <p>
+                <label for="plato">Plato:</label>
+                <select id="plato" name="plato">
+                    <option value="paella">Paella Valenciana</option>
+                    <option value="tortilla">Tortilla Española</option>
+                    <option value="gazpacho">Gazpacho Andaluz</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="nombre_resena">Nombre del que realiza la reseña:</label>
+                <input type="text" id="nombre_resena" name="nombre_resena">
+            </p>
+
+            <p>
+                <label for="resena">Reseña del plato:</label><br>
+                <textarea id="resena" name="resena" rows="5" cols="50"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar Reseña">
+                <input type="reset" value="Limpiar">
+            </p>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Restaurante El Buen Sabor. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
