@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Antonio Del Pino Hidalgo">
+    <meta name="description" content="Formulario de Datos Personales - Antonio Del Pino Hidalgo">
+    <meta name="keywords" content="formularios, datos personales, acceso">
+    <title>Formulario 1: Datos Personales - Antonio Del Pino Hidalgo</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulario 1: Datos Personales</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Volver al índice de formularios</a></li>
+            <li><a href="../index.html">Volver al menú principal</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </p>
+
+                <p>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                </p>
+
+                <p>
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni">
+                </p>
+
+                <p>
+                    <label for="localidad">Localidad de Nacimiento:</label>
+                    <input type="text" id="localidad" name="localidad">
+                </p>
+
+                <p>
+                    <label for="provincia">Provincia:</label>
+                    <select id="provincia" name="provincia">
+                        <option value="huelva">Huelva</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="cadiz">Cádiz</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="malaga">Málaga</option>
+                        <option value="granada">Granada</option>
+                        <option value="jaen">Jaén</option>
+                        <option value="almeria">Almería</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="fecha">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha">
+                </p>
+
+                <p>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </p>
+
+                <p>
+                    <label for="cp">Código Postal:</label>
+                    <input type="text" id="cp" name="cp">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Forma de Acceso</legend>
+                <p>
+                    <input type="radio" id="directo" name="acceso" value="directo">
+                    <label for="directo">Directo</label>
+                </p>
+                <p>
+                    <input type="radio" id="prueba" name="acceso" value="prueba">
+                    <label for="prueba">Prueba Libre</label>
+                </p>
+
+                <p>Si has elegido Directo, indica la modalidad:</p>
+                <p>
+                    <input type="radio" id="bach" name="modalidad" value="bachillerato">
+                    <label for="bach">Bachillerato Log Modalidad</label>
+                    <input type="text" name="bachillerato_texto">
+                </p>
+                <p>
+                    <input type="radio" id="experimental" name="modalidad" value="experimental">
+                    <label for="experimental">Experimental</label>
+                </p>
+                <p>
+                    <input type="radio" id="cou" name="modalidad" value="cou">
+                    <label for="cou">COU Opción</label>
+                    <input type="text" name="cou_texto">
+                </p>
+                <p>
+                    <input type="radio" id="fp2" name="modalidad" value="fp2">
+                    <label for="fp2">FP2</label>
+                </p>
+                <p>
+                    <input type="radio" id="otros" name="modalidad" value="otros">
+                    <label for="otros">Otros (especifique)</label>
+                    <input type="text" name="otros_texto">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Documentos Adjuntados</legend>
+                <p>
+                    <input type="checkbox" id="fotocopia" name="documentos" value="fotocopia">
+                    <label for="fotocopia">Fotocopia DNI</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="certificado" name="documentos" value="certificado">
+                    <label for="certificado">Certificado Académico</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="otros_doc" name="documentos" value="otros_doc">
+                    <label for="otros_doc">Otros documentos (especifique)</label>
+                    <input type="text" name="otros_doc_texto">
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar Solicitud">
+                <input type="reset" value="Limpiar datos">
+            </p>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Antonio del Pino Hidalgo</p>
+    </footer>
+
+</body>
+</html>

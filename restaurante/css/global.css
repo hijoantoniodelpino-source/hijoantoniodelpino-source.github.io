@@ -1,0 +1,125 @@
+/* ==========================================
+   ESTILOS GLOBALES - EL BUEN SABOR
+   ========================================== */
+
+/* Definimos los colores basados en el logo */
+:root {
+    --color-teja: #a54421;       /* El naranja oscuro del logo */
+    --color-oscuro: #333333;     /* El gris casi negro del texto */
+    --color-fondo: #fcfbfa;      /* Un blanco roto muy suave */
+    --color-texto: #4a4a4a;      /* Gris para leer bien */
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--color-teja);
+}
+
+header h1 {
+    color: var(--color-teja);
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: var(--color-oscuro);
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-teja);
+}
+
+/* Contenido principal */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 50vh;
+}
+
+main h2 {
+    color: var(--color-oscuro);
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--color-oscuro);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Botones (para los formularios) */
+input[type="submit"], 
+input[type="reset"],
+button {
+    background-color: var(--color-teja);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover, 
+input[type="reset"]:hover,
+button:hover {
+    background-color: #823318;
+}
+
+input[type="reset"] {
+    background-color: #888;
+}
+
+input[type="reset"]:hover {
+    background-color: #555;
+}
