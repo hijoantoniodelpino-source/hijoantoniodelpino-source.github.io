@@ -1,0 +1,104 @@
+/* ==========================================
+   ESTILOS PARA EL HORARIO DEL CURSO
+   ========================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcfbfa;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #a54421;
+}
+
+header h1 {
+    color: #a54421;
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+nav {
+    background-color: #333333;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a54421;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    color: #333333;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* --- Tabla --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+thead th {
+    background-color: #a54421;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f0e6e2;
+}
+
+tfoot td {
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
