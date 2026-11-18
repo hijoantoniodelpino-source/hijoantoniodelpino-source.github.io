@@ -123,3 +123,72 @@ input[type="reset"] {
 input[type="reset"]:hover {
     background-color: #555;
 }
+
+/* ==========================================
+   MENÚ DESPLEGABLE POR COLUMNAS
+   ========================================== */
+
+/* Contenedor principal del menú */
+.menu-columnas {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333; /* El fondo oscuro de tu nav */
+    position: relative;
+}
+
+/* Cada columna */
+.columna-menu {
+    position: relative;
+    padding: 15px 30px;
+}
+
+/* El texto que hace de título (Recetas, El Restaurante, etc.) */
+.titulo-menu {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+}
+
+.titulo-menu:hover {
+    color: #a54421; /* Color teja al pasar el ratón */
+}
+
+/* El submenú desplegable (oculto por defecto) */
+.submenu {
+    display: none; /* Oculto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444444;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    min-width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+/* Mostrar el submenú al pasar el ratón por la columna */
+.columna-menu:hover .submenu {
+    display: block;
+}
+
+/* Estilo de los enlaces del submenú */
+.submenu li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+}
+
+.submenu li a:hover {
+    background-color: #a54421; /* Fondo teja al pasar el ratón */
+    color: #ffffff;
+}

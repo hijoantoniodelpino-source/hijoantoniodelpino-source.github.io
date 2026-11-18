@@ -1,9 +1,9 @@
 /* ==========================================
-   ESTILOS PARA EL HORARIO DEL CURSO
+   ESTILOS PARA EL HORARIO DEL RESTAURANTE
    ========================================== */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Letra más moderna */
     background-color: #fcfbfa;
     color: #333333;
     margin: 0;
@@ -13,20 +13,24 @@ body {
 
 header {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
     border-bottom: 3px solid #a54421;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra sutil bajo la cabecera */
 }
 
 header h1 {
     color: #a54421;
     margin: 0;
     font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 nav {
     background-color: #333333;
     padding: 15px;
+    text-align: center;
 }
 
 nav ul {
@@ -35,12 +39,15 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
 }
 
 nav a:hover {
@@ -48,7 +55,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 800px; /* Más estrecho para que la tabla no se estire demasiado */
     margin: 40px auto;
     padding: 0 20px;
 }
@@ -58,41 +65,66 @@ main h2 {
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 10px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
-/* --- Tabla --- */
+/* --- ESTILOS DE LA TABLA MEJORADOS --- */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Quita los bordes dobles feos */
     margin-top: 20px;
     background-color: #ffffff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08); /* Sombra más elegante */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Para que los bordes redondeados se apliquen a la cabecera */
 }
 
 th, td {
     padding: 15px;
     text-align: center;
-    border: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0; /* Solo línea abajo, más limpio */
 }
 
+/* Cabecera de la tabla (Día, Mañana, Tarde) */
 thead th {
-    background-color: #a54421;
+    background-color: #a54421; /* Color teja de tu logo */
     color: #ffffff;
     text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: none; /* Quitamos la línea de abajo en la cabecera */
 }
 
+/* Columna de los días (Lunes, Martes...) */
+tbody td:first-child {
+    font-weight: bold;
+    color: #a54421;
+    background-color: #fdfdfd;
+}
+
+/* Efecto cebra para las filas pares */
 tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* Efecto al pasar el ratón por la fila */
 tbody tr:hover {
-    background-color: #f0e6e2;
+    background-color: #f0e6e2; /* Tono teja muy suave */
 }
 
+/* Fila del Domingo (Cerrado) */
+tbody tr:last-child {
+    background-color: #ffeaea; /* Un rojo muy suave para indicar que está cerrado */
+    color: #a54421;
+    font-weight: bold;
+}
+
+/* Pie de la tabla */
 tfoot td {
     background-color: #333333;
     color: #ffffff;
     font-weight: bold;
+    font-style: italic;
 }
 
 footer {

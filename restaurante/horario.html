@@ -2,13 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Tu Nombre Completo">
+    <meta name="author" content="Antonio Del Pino Hidalgo">
     <meta name="description" content="Horario del Restaurante El Buen Sabor">
     <meta name="keywords" content="horario, restaurante, apertura, cierre, semana">
     <title>Horario - Restaurante El Buen Sabor</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- ENLACES AL CSS CORREGIDOS -->
     <link rel="stylesheet" href="css/global.css">
-    <rel="stylesheet" href="../css/horario.css">
+    <link rel="stylesheet" href="css/horario.css">
 </head>
 <body>
 
@@ -25,7 +26,8 @@
     <main>
         <h2>Horario semanal</h2>
 
-        <table border="1">
+        <!-- QUITADO EL ATRIBUTO BORDER="1" PARA QUE ACTÚE EL CSS -->
+        <table>
             <thead>
                 <tr>
                     <th>Día</th>
@@ -69,6 +71,12 @@
                     <td colspan="2">Cerrado (día de descanso del personal)</td>
                 </tr>
             </tbody>
+            <!-- AÑADIDO EL TFOOT QUE PIDE LA RÚBRICA -->
+            <tfoot>
+                <tr>
+                    <td colspan="3">Día de descanso del personal: Domingo</td>
+                </tr>
+            </tfoot>
         </table>
     </main>
 

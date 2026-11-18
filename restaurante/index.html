@@ -7,26 +7,56 @@
     <meta name="keywords" content="restaurante, comida, recetas, cocina, casero">
     <title>Restaurante El Buen Sabor</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
-    
 </head>
 <body>
-         <img src="img/logo.jpg" width="400">
+
     <header>
+        <img src="img/logo.jpg" width="400" alt="Logo El Buen Sabor">
         <h1>Restaurante El Buen Sabor</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="receta1.html">Receta 1: Paella Valenciana</a></li>
-            <li><a href="receta2.html">Receta 2: Tortilla Española</a></li>
-            <li><a href="receta3.html">Receta 3: Gazpacho Andaluz</a></li>
-            <li><a href="horario.html">Horario del restaurante</a></li>
-            <li><a href="reserva.html">Hacer una reserva</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="resena.html">Dejar una reseña</a></li>
-            <li><a href="../index.html">Volver al menú principal</a></li>
+    <!-- MENÚ DESPLEGABLE POR COLUMNAS -->
+    <nav class="menu-principal">
+        <ul class="menu-columnas">
+            
+            <!-- Columna 1: Recetas -->
+            <li class="columna-menu">
+                <span class="titulo-menu">Recetas</span>
+                <ul class="submenu">
+                    <li><a href="receta1.html">Paella Valenciana</a></li>
+                    <li><a href="receta2.html">Tortilla Española</a></li>
+                    <li><a href="receta3.html">Gazpacho Andaluz</a></li>
+                </ul>
+            </li>
+
+            <!-- Columna 2: El Restaurante -->
+            <li class="columna-menu">
+                <span class="titulo-menu">El Restaurante</span>
+                <ul class="submenu">
+                    <li><a href="horario.html">Horario del restaurante</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="resena.html">Dejar una reseña</a></li>
+                </ul>
+            </li>
+
+            <!-- Columna 3: Reservas -->
+            <li class="columna-menu">
+                <span class="titulo-menu">Reservas</span>
+                <ul class="submenu">
+                    <li><a href="reserva.html">Hacer una reserva</a></li>
+                </ul>
+            </li>
+
+            <!-- Columna 4: Navegación -->
+            <li class="columna-menu">
+                <span class="titulo-menu">Navegación</span>
+                <ul class="submenu">
+                    <li><a href="../index.html">Volver al menú principal</a></li>
+                </ul>
+            </li>
+
         </ul>
     </nav>
 
